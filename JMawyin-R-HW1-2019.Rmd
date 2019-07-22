@@ -1,0 +1,41 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+
+Q1: Write a loop that calculates 12-factorial.
+```{r}
+factorial <- function(x){
+  y <- 1
+  for(i in 1:x){
+    y <-y*((1:x)[i])
+  }
+  print(y)
+}
+factorial(12)
+
+```
+
+
+
+
+Q2: Show how to create a numeric vector that contains the sequence from 20 to 50 by 5.
+```{r}
+numeric_vector<-seq(20,50,5)
+numeric_vector
+```
+
+Q3: Create the functions "factorial" that takes a trio of input numbers a, b and c and solves the quadratic equation. The function should print as output the two solutions.
+
+```{r}
+factorial <- function(a,b,c){
+  x<-((-b+(-4*a*c+b^2)^0.5)/2*a)
+  y<-((-b-(-4*a*c+b^2)^0.5)/2*a)
+  print(x)
+  print(y)
+}
+factorial(1,5,3)
+```
+
