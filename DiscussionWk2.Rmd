@@ -1,0 +1,27 @@
+---
+title: "DATA 605 - Discussion Week 2"
+author: "Jose A. Mawyin"
+date: "9/9/2019"
+output: pdf_document
+---
+##Let's work on Problem C29 from the Determinant chapter:
+$$\det \begin{pmatrix}2&3&0&2&1\\ \:0&1&1&1&2\\ \:0&0&1&2&3\\ \:0&1&2&1&0\\ \:0&0&0&1&2\end{pmatrix}$$
+
+We can reduce this to row echelon form to solve for the determinant.
+
+First let's cancel element [4,2] by $R_4\:\leftarrow \:R_4-1\cdot \:R_2$
+
+$$\begin{pmatrix}2&3&0&2&1\\ 0&1&1&1&2\\ 0&0&1&2&3\\ 0&0&1&0&-2\\ 0&0&0&1&2\end{pmatrix}$$
+
+Then let's cancel element [4,3] by $R_4\:\leftarrow \:R_4-1\cdot \:R_3$
+
+$$\begin{pmatrix}2&3&0&2&1\\ 0&1&1&1&2\\ 0&0&1&2&3\\ 0&0&0&-2&-5\\ 0&0&0&1&2\end{pmatrix}$$
+
+Then let's cancel element [5,4] by $R_5\:\leftarrow \:R_5+\frac{1}{2}\cdot \:R_4$
+
+$$\begin{pmatrix}2&3&0&2&1\\ 0&1&1&1&2\\ 0&0&1&2&3\\ 0&0&0&-2&-5\\ 0&0&0&0&-\frac{1}{2}\end{pmatrix}$$
+The determinant of the matrix in row echelon form is the diagonal product of the matrix.
+
+$$2\cdot \:1\cdot \:1\cdot \left(-2\right)\left(-\frac{1}{2}\right)=2$$
+
+
